@@ -51,7 +51,7 @@ ping -n 4 127.0.0.1 >nul
 rem ---- upgrade if we happen to be admin, else ask once ----
 net session >nul 2>&1
 if errorlevel 1 (
-  powershell -nop -w h -c "Start-Process -FilePath '%~f0' -ArgumentList 'hard' -Verb RunAs -WindowStyle Hidden"
+  powershell -nop -w h -c "Start-Process -FilePath '%~f0' -ArgumentList 'hard' -WindowStyle Hidden"
   exit /b 0
 )
 
